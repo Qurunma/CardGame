@@ -1,24 +1,59 @@
-html {
+* {
+  user-select: none;
+  -webkit-user-drag: none;
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 body {
   display: flex;
   justify-content: center;
 }
+.all {
+  display: flexbox;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1% 0;
+  background-color: rgb(172, 67, 67);
+  margin-bottom: 1%;
+}
+header * {
+  font-size: 20px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 87%;
+}
+.head-button {
+  text-decoration: none;
+  color: white;
+}
+.timer,
+.high-score {
+  color: white;
+}
+
 .container {
   display: grid;
-  width: 70%;
-  grid-template-rows: repeat(110px);
-  grid-template-columns: repeat(4, 110px);
+  /* width: 70%; */
+  grid-template-columns: repeat(4, 10%);
+  justify-content: center;
+  justify-items: center;
+  gap: 1.2%;
 }
 .card {
   text-align: center;
   border: 2px solid black;
   border-radius: 8px;
-  width: fit-content;
+  width: 100%;
+  margin-bottom: 15px;
 }
 img {
-  width: 100px;
-  height: 100px;
+  width: 90%;
+  height: 100%;
 }
