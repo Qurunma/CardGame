@@ -17,4 +17,5 @@ export function returnScore() {
   clearTimeout(scoreTimer);
   alert(`Ваш счёт: ${score}`);
   checkerHighScore(score);
+  location.href = "./CheckerScore.php?score=" + score;
 }

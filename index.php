@@ -11,12 +11,10 @@
   <body>
     <div class="all">
       <header>
-        <div class="buttons">
-          <a href="index.html" class="head-button">Играть</a>
-          <p class="timer"></p>
-          <p class="high-score"></p>
-          <a href="" class="head-button">Топ игроков</a>
-        </div>
+        <?php
+            require "header.php"
+        ?>
+        <!-- <a href="./CheckerScore.php">dsads</a> -->
       </header>
       <div class="container"></div>
     </div>

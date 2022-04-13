@@ -15,8 +15,8 @@ export function checkerEndGame(imgArr, timerId) {
       alert("Вы победили!");
       clearTime();
       returnScore();
-      document.querySelector(".container").innerHTML = "";
-      location.reload();
+      // document.querySelector(".container").innerHTML = "";
+      // location.reload();
     }, 11);
   }
 }

@@ -6,12 +6,12 @@ import { initHighScore } from "./localStorageForHighScore.js";
 let timerWork = false;
 let imgArr = [];
 const iconsArr = [
-  { url: "backlazhan", uses: 0, opened: false },
-  { url: "corn", uses: 0, opened: false },
-  { url: "kapusta", uses: 0, opened: false },
-  { url: "mushroom", uses: 0, opened: false },
-  { url: "pumpkin", uses: 0, opened: false },
-  { url: "tomato", uses: 0, opened: false },
+  { url: "backlazhan", uses: 0 },
+  { url: "corn", uses: 0 },
+  { url: "kapusta", uses: 0 },
+  { url: "mushroom", uses: 0 },
+  { url: "pumpkin", uses: 0 },
+  { url: "tomato", uses: 0 },
 ];
 
 export function initCards() {
