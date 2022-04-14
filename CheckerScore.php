@@ -30,14 +30,15 @@ function writer($scoresFromFile)
 function checker($scoreForCheck, $scoresFromFile)
 {if (count($scoresFromFile) < 10) {
     $scoresFromFile[] = $scoreForCheck;
-    sort($scoresFromFile);
+    rsort($scoresFromFile);
     writer($scoresFromFile);
   }
   else if (count($scoresFromFile) == 10){
-    sort($scoresFromFile);
+    rsort($scoresFromFile);
     if ($scoreForCheck > $scoresFromFile[count($scoresFromFile)-1]) {
       $scoresFromFile[count($scoresFromFile)-1] = $scoreForCheck;
     }
+    rsort($scoresFromFile);
     writer($scoresFromFile);
   }
 }
